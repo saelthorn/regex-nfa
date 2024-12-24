@@ -12,7 +12,7 @@ This project implements a Python program to convert a given regular expression i
 - Generates a visual representation of the NFA as a transition diagram.
 
 ## Algorithm
-The program uses the Thompson Construction Algorithm to build the NFA. This algorithm ensures that the resulting NFA can be easily constructed from a regular expression by recursively breaking it into smaller components and combining them into a larger automaton. Key steps of the algorithm include:
+For building the NFA the program uses the Thompson Construction Algorithm. This algorithm guarantees a simple construction from the regular expression of the resulting NFA, by recursively splitting the regular expression into smaller pieces and combing them in a single automaton containing all of them. Key steps of the algorithm include:
 
 - Base Case: For a single character, create an NFA with two states and a transition labeled with the character.
 - Alternation (|): Create a new start state and accept state, with epsilon transitions to the start states of the two sub-NFAs.
@@ -54,7 +54,7 @@ The program uses the Thompson Construction Algorithm to build the NFA. This algo
 
 ## Example
 ### Input
-Regular expression: `(a|b)+|(ab)`
+Regular expression: `(a|b)+c`
 
 ### Output
 Transition Diagram:
@@ -68,8 +68,9 @@ Transition Diagram:
 4. Add a transition for `c` leading to the accept state.
 
 ## File Structure
-- `regex_to_nfa.py`: Contains the main logic for converting regular expressions to NFAs.
+- `main.py`: Contains the main logic for converting regular expressions to NFAs.
 - `README.md`: Documentation for the project.
+- `regex_nfa.png`: Transition Diagram from the input in 'main.py'.
 - `requirements.txt`: Lists required Python libraries.
 
 ## Future Improvements
