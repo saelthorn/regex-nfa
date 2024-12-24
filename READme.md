@@ -54,7 +54,7 @@ For building the NFA the program uses the Thompson Construction Algorithm. This 
 
 ## Example
 ### Input
-Regular expression: `(a|b)+|(ab)`
+Regular expression: `(a|b)+c`
 
 ### Output
 Transition Diagram:
@@ -68,8 +68,9 @@ Transition Diagram:
 4. Add a transition for `c` leading to the accept state.
 
 ## File Structure
-- `regex_to_nfa.py`: Contains the main logic for converting regular expressions to NFAs.
+- `main.py`: Contains the main logic for converting regular expressions to NFAs.
 - `README.md`: Documentation for the project.
+- `regex_nfa.png`: Transition Diagram from the input in 'main.py'.
 - `requirements.txt`: Lists required Python libraries.
 
 ## Future Improvements
