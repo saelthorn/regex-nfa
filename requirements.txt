@@ -1,0 +1,5 @@
+Requirements:
+
+-Python 3.7 or later
+-Libraries:
+    -graphviz (for generating transition diagrams)
