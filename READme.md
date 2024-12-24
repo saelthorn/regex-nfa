@@ -11,6 +11,15 @@ This project implements a Python program to convert a given regular expression i
   - Parentheses for grouping (e.g., `(a|b)c`).
 - Generates a visual representation of the NFA as a transition diagram.
 
+## Algorithm
+The program uses the Thompson Construction Algorithm to build the NFA. This algorithm ensures that the resulting NFA can be easily constructed from a regular expression by recursively breaking it into smaller components and combining them into a larger automaton. Key steps of the algorithm include:
+
+- Base Case: For a single character, create an NFA with two states and a transition labeled with the character.
+- Alternation (|): Create a new start state and accept state, with epsilon transitions to the start states of the two sub-NFAs.
+- Kleene Star (*): Add epsilon transitions to allow zero or more repetitions of the sub-NFA.
+- One or More (+): Similar to Kleene Star, but ensures at least one occurrence of the sub-NFA.
+- Grouping: Parentheses are handled by recursively processing the enclosed sub-pattern.
+
 ## Requirements
 - Python 3.7 or later
 - Libraries:
@@ -45,12 +54,12 @@ This project implements a Python program to convert a given regular expression i
 
 ## Example
 ### Input
-Regular expression: `(a|b)+c`
+Regular expression: `(a|b)+|(ab)`
 
 ### Output
 Transition Diagram:
 
-![NFA Diagram](nfa_diagram.png)
+![NFA Diagram](regex_nfa.png)
 
 ### Explanation
 1. Start with the initial state `q0`.
