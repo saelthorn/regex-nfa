@@ -1,6 +1,6 @@
 # Regular Expression to NFA Converter
 
-This project implements a Python program to convert a given regular expression into a Non-deterministic Finite Automaton (NFA). The tool supports various regex operators, including `|` (alternation), `*` (Kleene star), `+` (one or more repetitions), and parentheses for grouping.
+This project implements a Python program to convert a given regular expression into a Non-deterministic Finite Automaton (NFA). The tool supports various regex operators, including `|` (alternation), `*` (Kleene star), `+` (one or more repetitions), and `()` parentheses for grouping.
 
 ## Features
 - Converts regular expressions into NFA transition diagrams.
@@ -19,7 +19,7 @@ This project implements a Python program to convert a given regular expression i
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/regex-to-nfa.git
+   git clone https://github.com/saelthorn/regex-nfa.git
    cd regex-to-nfa
    ```
 2. Install the required libraries:
@@ -38,7 +38,7 @@ This project implements a Python program to convert a given regular expression i
    ```
 2. Run the script:
    ```
-   python your_script.py
+   python main.py
    ```
 3. View the generated `regex_nfa.png` file to see the transition diagram of the NFA.
 
