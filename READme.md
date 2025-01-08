@@ -8,7 +8,7 @@ This project implements a Python program to convert a given regular expression i
   - `|`: Alternation (e.g., `a|b` matches `a` or `b`).
   - `*`: Kleene star (e.g., `a*` matches zero or more `a`'s).
   - `+`: One or more repetitions (e.g., `a+` matches one or more `a`'s).
-  - `()`:Parentheses for grouping (e.g., `(a|b)c`).
+  - `()`: Parentheses for grouping (e.g., `(a|b)c`).
 - Generates a visual representation of the NFA as a transition diagram.
 
 ## Algorithm
